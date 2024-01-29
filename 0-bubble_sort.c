@@ -1,13 +1,21 @@
 #include <stdio.h>
 #include "sort.h"
-
+/**
+ * swap - swapping the valuse
+ * @xp: value 1
+ * @yp: value 2
+*/
 void swap(int *xp, int *yp)
 {
 	int tmp = *xp;
 	*xp = *yp;
 	*yp = tmp;
 }
-
+/**
+ * bubble_sort - sorts an array of integers using Bubble sort
+ * @array: array
+ * @size: size
+*/
 void bubble_sort(int *array, size_t size)
 {
 	size_t i, j;
